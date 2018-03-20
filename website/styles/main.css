@@ -6,6 +6,7 @@
   --main-background: rgba(248, 248, 248, 0.808);
   --temp-background-color: rgba(100, 76, 168, 0.76);
   --off-white: rgba(240, 240, 240, 0.9);
+  --video-background-color: rgba(230, 30, 45, 0.7);
 }
 
 /* Styles */
@@ -53,17 +54,23 @@ nav a {
 }
 
 .features {
-  max-width: 80%;
-  padding: 40px;
-  margin-left: auto;
-  margin-right: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 20px;
+  min-width: 80%;
+  padding: 40px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.features>div {
+.featured-item {
+  list-style: none;
   width: 400px;
   height: 360px;
   background: var(--temp-background-color);
+}
+
+section.video {
+  background: var(--video-background-color);
+  height: 200px;
 }
