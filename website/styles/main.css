@@ -3,8 +3,10 @@
 :root {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  --main-bg-color: rgba(248, 248, 248, 0.808);
+  --bg-color: rgba(248, 248, 248, 0.78);
+  --main-color: rgb(127, 40, 129);
   --temp-bg-color: rgba(100, 76, 168, 0.76);
+  --gray: rgba(115, 115, 115, 0.84);
   --off-white: rgba(240, 240, 240, 0.9);
   --video-bg-color: rgba(230, 30, 45, 0.7);
   --footer-bg-color: rgba(51, 51, 51, 0.849);
@@ -12,18 +14,13 @@
 
 /* Styles */
 
-header,
-section,
-footer {
-  grid-column: 1/4;
-}
-
 header {
-  height: 500px;
+  height: 400px;
 }
 
 section {
   margin-top: 40px;
+  background: var(--bg-color);
 }
 
 img {
@@ -39,33 +36,56 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 400px;
   z-index: -1;
 }
 
 .logo {
   float: left;
-  width: 300px;
+  width: 250px;
   padding: 15px;
 }
 
-.logo img {
-  width: 100%;
+#menu-toggle {
+  display: block;
+  position: relative;
+  float: right;
+  margin: 1rem 0;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.5;
+  color: var(--main-color);
+  background: var(--gray);
+}
+
+#menu-toggle:after {
+  content: '\2630';
 }
 
 .menu {
-  float: right;
-  padding-right: 40px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
 }
 
 nav li {
-  display: inline-block;
-  padding: 5px;
+  display: none;
+  padding: 0.5rem;
 }
 
 nav a {
+  padding: 0.5rem 2rem;
   text-decoration: none;
   color: var(--off-white);
+}
+
+nav li:hover {
+  background: var(--off-white);
+  width: 100%;
+}
+
+nav a:hover {
+  color: var(--footer-bg-color);
 }
 
 #features {
@@ -78,10 +98,11 @@ nav a {
   padding: 0;
 }
 
-.featured-item {
-  background: var(--temp-bg-color);
+.feature-title {
+  position: relative;
+  border-bottom: 2px solid var(--gray);
+  line-height: 1.5;
 }
-
 #video {
   background: var(--video-bg-color);
   height: 400px;
@@ -98,5 +119,18 @@ footer {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  header,
+  section,
+  footer {
+    grid-column: 1/4;
+  }
+  .menu {
+    float: right;
+    padding-right: 40px;
+  }
+  nav li {
+    display: inline-block;
+    padding: 5px;
   }
 }
