@@ -20,6 +20,12 @@ body {
   background: #fff;
 }
 
+.back-shadow {
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3), -2px 2px 7px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3), 2px -2px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3), -2px 2px 7px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3), 2px -2px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3), -2px 2px 7px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3), 2px -2px 7px rgba(0, 0, 0, 0.3);
+}
+
 /* Styles */
 
 header {
@@ -103,10 +109,6 @@ nav a:hover {
 .card {
   margin: 0;
   background: var(--bg-color);
-  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3), -2px 2px 7px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3), 2px -2px 7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3), -2px 2px 7px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3), 2px -2px 7px rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3), -2px 2px 7px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3), 2px -2px 7px rgba(0, 0, 0, 0.3);
-  
 }
 
 .card-image:hover {
@@ -133,8 +135,10 @@ nav a:hover {
 }
 
 .video-player {
+
   min-width: 200px;
   min-height: 200px;
+  height: auto;
 }
 
 #youtube-video {
