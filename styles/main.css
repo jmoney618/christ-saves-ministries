@@ -103,9 +103,9 @@ nav a:hover {
 .card {
   margin: 0;
   background: var(--bg-color);
-  -webkit-box-shadow: 5px 5px 25px -5px var(--grey), -5px 5px 25px -5px var(--grey), -5px -5px 25px -5px var(--grey), 5px -5px 25px -5px var(--grey);
-  -moz-box-shadow: 5px 5px 25px -5px var(--grey), -5px 5px 25px -5px var(--grey), -5px -5px 25px -5px var(--grey), 5px -5px 25px -5px var(--grey);
-  box-shadow: 5px 5px 25px -5px var(--grey), -5px 5px 25px -5px var(--grey), -5px -5px 25px -5px var(--grey), 5px -5px 25px -5px var(--grey);
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px -5px 25px -5px rgba(0, 0, 0, 0.4), 5px -5px 25px -5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px -5px 25px -5px rgba(0, 0, 0, 0.4), 5px -5px 25px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px -5px 25px -5px rgba(0, 0, 0, 0.4), 5px -5px 25px -5px rgba(0, 0, 0, 0.4);
   
 }
 
