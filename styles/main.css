@@ -107,13 +107,16 @@ nav a:hover {
 }
 
 .card {
+  position: relative;
   margin: 0;
   background: var(--bg-color);
+  text-align: center;
 }
 
-.card-image:hover {
+/* .card-image:hover {
   opacity: 0.5;
-}
+  z-index: -1;
+} */
 
 #features ul {
   list-style: none;
@@ -130,14 +133,33 @@ nav a:hover {
   letter-spacing: 0.25em;
 }
 
+.content-details {
+  display: none;
+  position: absolute;
+  top: 20%;
+  margin:0 1rem;
+  padding: 1rem;
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 500;
+}
+
+.card:hover .content-details {
+  display: block;
+  background: rgba(126, 40, 129, 0.8);
+}
+
+.card:hover .card-image {
+  opacity: 0.5;
+  z-index: -1;
+}
+
 #video {
   background: var(--video-bg-color);
 }
 
 .video-player {
-
   min-width: 200px;
-  min-height: 200px;
   height: auto;
 }
 
