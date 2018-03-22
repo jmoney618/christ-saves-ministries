@@ -103,9 +103,9 @@ nav a:hover {
 .card {
   margin: 0;
   background: var(--bg-color);
-  -webkit-box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px -5px 25px -5px rgba(0, 0, 0, 0.4), 5px -5px 25px -5px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px -5px 25px -5px rgba(0, 0, 0, 0.4), 5px -5px 25px -5px rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px 5px 25px -5px rgba(0, 0, 0, 0.4), -5px -5px 25px -5px rgba(0, 0, 0, 0.4), 5px -5px 25px -5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3), -2px 2px 7px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3), 2px -2px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3), -2px 2px 7px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3), 2px -2px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3), -2px 2px 7px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3), 2px -2px 7px rgba(0, 0, 0, 0.3);
   
 }
 
@@ -123,7 +123,9 @@ nav a:hover {
   margin: 0.5rem 0;
   position: relative;
   /* border-bottom: 2px solid var(--grey); */
+  font-size: 1.5rem;
   line-height: 1.5;
+  letter-spacing: 0.25em;
 }
 
 #video {
