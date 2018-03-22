@@ -39,7 +39,7 @@ img {
 
 .bg-image {
   position: absolute;
-  background: url('../../assetts/banner-header-easter-cross-161188.jpeg') center/cover;
+  background: url('assetts/banner-header-easter-cross-161188.jpeg') center/cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
