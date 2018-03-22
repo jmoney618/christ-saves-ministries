@@ -1,15 +1,23 @@
 /* Globals */
 
+@-ms-viewport {
+  width: device-width;
+}
+
 :root {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  --bg-color: rgba(248, 248, 248, 0.78);
-  --main-color: rgb(127, 40, 129);
+  --bg-color: #d4dda6;
+  --main-color: rgb(126, 40, 129);
   --temp-bg-color: rgba(100, 76, 168, 0.76);
   --gray: rgba(115, 115, 115, 0.84);
   --off-white: rgba(240, 240, 240, 0.9);
-  --video-bg-color: rgba(230, 30, 45, 0.7);
+  --video-bg-color: rgba(195, 0, 98, 0.884);
   --footer-bg-color: rgba(51, 51, 51, 0.849);
+}
+
+body {
+  background: #fff;
 }
 
 /* Styles */
@@ -19,8 +27,8 @@ header {
 }
 
 section {
-  margin-top: 40px;
-  background: var(--bg-color);
+  margin-top: 20px;
+  padding: 2rem;
 }
 
 img {
@@ -92,6 +100,12 @@ nav a:hover {
   padding: 1.5em;
 }
 
+.featured-item {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: var(--bg-color);
+}
+
 #features ul {
   list-style: none;
   margin: 0;
@@ -99,13 +113,24 @@ nav a:hover {
 }
 
 .feature-title {
+  margin: 0.5rem 0;
   position: relative;
   border-bottom: 2px solid var(--gray);
   line-height: 1.5;
 }
+
 #video {
   background: var(--video-bg-color);
-  height: 400px;
+}
+
+.video-player {
+  min-width: 200px;
+  min-height: 200px;
+}
+
+#youtube-video {
+  width: 100%;
+  height: auto;
 }
 
 footer {
